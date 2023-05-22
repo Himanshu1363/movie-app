@@ -1,4 +1,4 @@
-let api = "http://www.omdbapi.com/?apikey=8c8f3622&t=";
+let api = "https://www.omdbapi.com/?apikey=8c8f3622&t=";
 let loadingStatus=false;
 let img = document.getElementById('img')
 let title = document.getElementById('title')
