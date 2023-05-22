@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="conatiner">
+
+
+
+<section>
+
+<div class="serach-container">
+    <input type="text" id="movieName" placeholder="Enter a movie name for details...">
+    <button class="btn" onClick="fetchMovieDetails()">Search Movie</button>
+
+</div>
+</section>
+
+
+
+<section>
+    <div class="intro"  id="intro">
+        <img src="" alt="">
+        <h1>Want the complete <span class="highlight">details of a movie</span></h1>
+        <p>Serach for the movie name and get complete details including direacters, actors, ImDB ratings, Votes, Earnings and more interesting facts</p>
+    </div>
+</section>
+
+<section>
+<div class="movie-container" id="movie-container">
+
+        <div class="content">
+            <h1 id="title">Avenger </h1>
+            <span id="year"></span>
+            <p class="description" id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero perferendis expedita, sunt in odit necessitatibus nulla dolorum tempora tempore ad, consectetur facere. Accusantium, amet dolores?
+            </p>
+            <p>Actors: <span id="actors"></span></p>
+            <p>Director: <span id="director"></span></p>
+            <p>Awards: <span id="awards"></span></p>
+            <p>Collection: <span id="collection"></span></p>
+
+        </div>
+
+        <div class="movie-img-container">
+        <img  class="movie-img" id="img" src="https://m.media-amazon.com/images/M/MV5BMTMzMjMwMjcyNl5BMl5BanBnXkFtZTcwNTA1NDgzMQ@@._V1_SX300.jpg" alt="" >
+        <p class="ratings tag">IMDB:<span class="" id="ratings"></span></p>
+        <p class="genre tag" id="genre">Action,Adventure,Drama</p>
+        </div>
+        
+
+</div>
+<div class="error-container" id="error-container">
+    <img src="err.jpg" height="200" alt="">
+    <h1 class="highlight">Movie not found</h1>
+</div>
+
+</section>
+
+
+
+
+<div  id="loader"></div>
+
+</div>
+
+<script src="app.js"></script>    
+</body>
+</html>
